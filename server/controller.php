@@ -1,4 +1,12 @@
 <?php 
-include_once __DIR __ .'/data.php';
+include_once __DIR__ . '/data.php';
+
+header ('Content-Type: application/json');
+echo json_encode (
+    [
+        'results' => $recordDisks,
+        'length' => count($recordDisks)
+    ]
+);
 
 ?>

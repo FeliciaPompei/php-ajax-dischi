@@ -19,29 +19,28 @@
         <header>
 
         </header>
-        <main class="container p-2">
+        <main id="app" class="container p-2">
             <?php include_once __DIR__ . '/server/data.php';?>
             <div class="row">
                 <div class="col-12 d-flex flex-wrap">
-                    <?php foreach($recordDisks as $recordDisk){?>
-                        <div class="card">
-                            <img src=" <?= $recordDisk['poster'] ?>"  alt="<?= $recordDisk['title'] ?>">
+                        <div class="card" v-for="cardDisk in disks">
+                            <img :src="cardDisk.poster"  :alt="cardDisk.title">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                <?= $recordDisk['title'] ?>
+                                    {{cardDisk.title}}
                                 </h5>
                                 <p class="card-text">
-                                    <?= $recordDisk['author'] ?>
+                                    {{cardDisk.author}}
                                 </p>
                                 <p class="card-text">
-                                    <?= $recordDisk['year'] ?>
+                                    {{cardDisk.year}}
                                 </p>
                             </div>
                         </div>
-                    <?php }?>
                 </div>
             </div>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
