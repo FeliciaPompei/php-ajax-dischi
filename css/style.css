@@ -2,14 +2,23 @@ body{
     background-color: #1e2d3b;
 }
 
+/* Header */
+
 header{
     background-color: #2e3a46;
-    height: 10vh;
 }
 
-/* main */
+header .my-logo img{
+    width: 40px;
+}
 
-.card{
-    background-color: #354351;
+
+/* main */
+.my-card-wrapper {
     width: calc(100% / 5);
+}
+
+.my-card-wrapper .card{
+    background-color: #354351;
+    
 }
