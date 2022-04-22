@@ -1,8 +1,7 @@
 const app = new Vue({
     'el' : '#app',
     data : {
-        disks : [],
-        genre : []
+        disks : []
     },
     methods : {
         addGenre(){
@@ -14,16 +13,10 @@ const app = new Vue({
         .then((result) =>{
             this.disks = result.data.results;
             console.table(this.disks)
-            this.disks.forEach((discElement) => {
-                if (!this.genre.includes(discElement.genre)){
-                    this.genre.push(discElement.genre)
-            };
-            });
         })
         .catch((error)=>{
             console.warn(error);
         });
     }
-
 })
 
