@@ -19,8 +19,28 @@
         <header>
 
         </header>
-        <main>
-
+        <main class="container p-2">
+            <?php include_once __DIR__ . '/server/data.php';?>
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap">
+                    <?php foreach($recordDisks as $recordDisk){?>
+                        <div class="card">
+                            <img src=" <?= $recordDisk['poster'] ?>"  alt="<?= $recordDisk['title'] ?>">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <?= $recordDisk['title'] ?>
+                                </h5>
+                                <p class="card-text">
+                                    <?= $recordDisk['author'] ?>
+                                </p>
+                                <p class="card-text">
+                                    <?= $recordDisk['year'] ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
+            </div>
         </main>
         <script src="js/main.js"></script>
     </body>

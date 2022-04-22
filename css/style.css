@@ -1,0 +1,15 @@
+body{
+    background-color: #1e2d3b;
+}
+
+header{
+    background-color: #2e3a46;
+    height: 10vh;
+}
+
+/* main */
+
+.card{
+    background-color: #354351;
+    width: calc(100% / 5);
+}
