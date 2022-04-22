@@ -1,4 +1,4 @@
-<?php 
+<?php
 $recordDisks = [
     [
         'poster' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
@@ -70,7 +70,6 @@ $recordDisks = [
         'genre' => 'Pop',
         'year' => '1987'
     ]
-    
 
 ]
 ?>

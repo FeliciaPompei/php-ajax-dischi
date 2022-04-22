@@ -15,10 +15,10 @@ header .my-logo img{
 
 /* main */
 .my-card-wrapper {
-    width: calc(100% / 5);
+    width:calc(100% / 5);
 }
 
 .my-card-wrapper .card{
     background-color: #354351;
-    
+    padding-bottom: 1.5rem;
 }

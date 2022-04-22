@@ -24,25 +24,18 @@
                         src="https://grafica-facile.com/wp-content/uploads/2022/01/spotify-logo.png" 
                         alt="Spotify Logo">
                     </div>
-                    <div class="col-1">
-                        <select name="genre-selector">
-                            <option :value="genre" v-for="(genre, index) in genre">
-                                {{genre}}
-                            </option>
-                        </select>
-                    </div>
                 </div>
             </header>
             <main class="container p-2">
                 <div class="row">
                     <div class="col-12 d-flex flex-wrap p-5">
-                        <div class="my-card-wrapper p-2" v-for="cardDisk in disks">
+                        <div class="my-card-wrapper p-2 d-flex" v-for="cardDisk in disks">
                             <div class="card">
                                 <img :src="cardDisk.poster"  :alt="cardDisk.title">
-                                <div class="card-body">
-                                    <h5 class="card-title">
+                                <div class="card-body text-white text-center">
+                                    <h6 class="card-title">
                                         {{cardDisk.title}}
-                                    </h5>
+                                    </h6>
                                     <p class="card-text">
                                         {{cardDisk.author}}
                                     </p>
