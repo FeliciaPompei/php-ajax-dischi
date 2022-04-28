@@ -1,11 +1,5 @@
 <?php
 
-
-
-$filteredList = [];
-// $search = $_GET['genre'];
-
-
 $recordDisks = [
     [
         'poster' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
@@ -77,16 +71,5 @@ $recordDisks = [
         'genre' => 'Pop',
         'year' => '1987'
     ]
-]
-
-if(!$_GET['genre'] = ""){
-    foreach($recordDisks as $recordDisk){
-        if (strtolower($recordDisk['genre']) == strtolower($_GET['genre'])) {
-            $filteredList[] = $recordDisk;
-        }
-    }
-} else{
-    $filteredList = $recordDisks;
-}
-
+];
 ?>
